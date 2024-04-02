@@ -1,10 +1,10 @@
-# Welcome to my incredibly interesting and intriguing lab report website
+# This is a markdown test page
 
 *Fancy text*
 
 **LOUD TEXT**
 
-## Subheading?
+## Subheading
 
 [Seek (sometimes questionable) knowledge here](google.com)
 
@@ -22,7 +22,7 @@
 4. Things
 
 Horizontal line!
-_______
+----
 
 `Inline code`
 
