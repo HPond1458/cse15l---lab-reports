@@ -6,7 +6,7 @@
 
 ## Subheading
 
-[Seek (sometimes questionable) knowledge here](google.com)
+[Seek (sometimes questionable) knowledge here](https://www.google.com)
 
 ![Apple](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lobo_%28apple%29.jpg/800px-Lobo_%28apple%29.jpg)
 
