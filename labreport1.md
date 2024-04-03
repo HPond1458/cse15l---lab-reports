@@ -2,7 +2,7 @@
 
 ## `cd` command
 
-1. No arguments
+### No arguments
 
 ```
 $ cd
@@ -11,6 +11,7 @@ henry@DESKTOP-87ALL79 MINGW64 ~
 $ pwd
 /c/Users/henry
 ```
+
 The absolute path to the working directory was `/c/Users/henry`.
 
 The absolute path does not change after running `cd`. Since no argument was offered,
@@ -19,7 +20,7 @@ that being `/c/Users/henry` in this case.
 
 This output is not an error, as it simply resets the directory back to its default.
 
-2. Directory argument
+### Directory argument
 
 ```
 $ cd lecture1
@@ -37,7 +38,7 @@ became `/c/Users/henry/lecture1` as seen above with the `pwd` command.
 
 This output is not an error, as we gave the command a proper argument and it executed as expected.
 
-3. File argument
+### File argument
 
 ```
 $ cd Hello.java
@@ -58,7 +59,7 @@ not execute and the directory did not change.
 
 ## `ls` command
 
-1. No arguments
+### No arguments
 
 ```
 $ ls
@@ -72,7 +73,7 @@ being the three files and the folder seen in the output above.
 
 This output is not an error, as the command executed as expected.
 
-2. Directory argument
+### Directory argument
 
 ```
 $ ls messages
@@ -86,7 +87,7 @@ offered directory, that being the three text files seen above.
 
 This output is not an error.
 
-3. File argument
+### File argument
 
 ```
 $ ls Hello.java
@@ -101,7 +102,7 @@ This output is not an error, as we gave the command a file to list as an output 
 
 ## cat command
 
-1. No arguments
+### No arguments
 
 ```
 $ cat
@@ -121,7 +122,7 @@ character and the string `test` as seen above. The command could only be aborted
 This output is technically not an error, as the terminal is concatenating the string or character offered as an argument.
 However, this use case seems quite limited.
 
-2. Directory arguments
+### Directory arguments
 
 ```
 $ cat lecture1 Documents
@@ -136,7 +137,7 @@ This is because the command is not designed to work with directories as argument
 
 This is an error for the reason stated above.
 
-3. File arguments
+### File arguments
 
 ```
 $ cat en-us.txt es-mx.txt
