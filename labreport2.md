@@ -46,7 +46,7 @@ class ChatServer {
 }
 ```
 
-![Chat Message 1](chatmessage1.PNG)
+![Chat Message 1](labreport2screenshots/chatmessage1.PNG)
 
 When adding this message, the methods called are `getPath()`, `getQuery()`, `split()`, and `equals()`.
 
@@ -54,7 +54,7 @@ When adding this message, the methods called are `getPath()`, `getQuery()`, `spl
 
 All the values of relevant fields have been updated to the values listed above because of the request.
 
-![Chat Message 2](chatmessage2.PNG)
+![Chat Message 2](labreport2screenshots/chatmessage2.PNG)
 
 When adding this message, the methods called are `getPath()`, `getQuery()`, `split()`, and `equals()`.
 
