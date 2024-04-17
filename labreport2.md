@@ -47,7 +47,23 @@ class ChatServer {
 ```
 
 ![Chat Message 1](chatmessage1.PNG)
+
 When adding this message, the methods called are `getPath()`, `getQuery()`, `split()`, and `equals()`.
-`getPath()` and `getQuery()` do not take arguments. `split()` takes in the `=` and `&` characters as arguments to split the string returned by `url.getQuery()` and the string stored in `parameters[1]` respectively into substrings. `equals()` takes in `"/"` and `"/add-message"` as arguments to compare with the path of `url`. The relevant fields are `url`, `parameters[]`, `chatMessage[]`, `chatUser`, `fullMessage`, and `messageHistory`. The values of these fields are 
+
+`getPath()` and `getQuery()` do not take arguments. `split()` takes in the `=` and `&` characters as arguments to split the string returned by `url.getQuery()` and the string stored in `parameters[1]` respectively into substrings. `equals()` takes in `"/"` and `"/add-message"` as arguments to compare with the path of `url`. The relevant fields are `url`, `parameters[]`, `chatMessage[]`, `chatUser`, `fullMessage`, and `messageHistory`. The value of `url` is `localhost:4001/add-message?s=Hello&user=HPond`. The values of `parameters[]` are as follows: `parameters[0]` is `s`, `parameters[1]` is `Hello&user`, `parameters[2]` is `HPond`. The values of `chatMessage[]` are as follows: `chatMessage[0]` is `Hello`, `chatMessage[1]` is `user`. The value of `chatUser` is `HPond`. The value of `fullMessage` is `HPond: Hello`. The value of `messageHistory` is `HPond: Hello \n`.
+
+All the values of relevant fields have been updated to the values listed above because of the request.
 
 ![Chat Message 2](chatmessage2.PNG)
+
+When adding this message, the methods called are `getPath()`, `getQuery()`, `split()`, and `equals()`.
+
+`getPath()` and `getQuery()` do not take arguments. `split()` takes in the `=` and `&` characters as arguments to split the string returned by `url.getQuery()` and the string stored in `parameters[1]` respectively into substrings. `equals()` takes in `"/"` and `"/add-message"` as arguments to compare with the path of `url`. The relevant fields are `url`, `parameters[]`, `chatMessage[]`, `chatUser`, `fullMessage`, and `messageHistory`. The value of `url` is `localhost:4001/add-message?s=How are you&user=NotHPond`. The values of `parameters[]` are as follows: `parameters[0]` is `s`, `parameters[1]` is `How are you&user`, `parameters[2]` is `NotHPond`. The values of `chatMessage[]` are as follows: `chatMessage[0]` is `How are you`, `chatMessage[1]` is `user`. The value of `chatUser` is `NotHPond`. The value of `fullMessage` is `NotHPond: How are you`. The value of `messageHistory` is `HPond: Hello\nNotHPond: How are you\n`.
+
+The values of all relevant fields have been updated to the values listed above with the sole exception of `parameters[0]`.
+
+## Part 2 - ssh keys
+
+
+
+## Part 3 - What I've Learned
