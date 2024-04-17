@@ -64,6 +64,18 @@ The values of all relevant fields have been updated to the values listed above w
 
 ## Part 2 - ssh keys
 
+Private key, local
 
+![Private Key](labreport2screenshots/privatekeylocal.PNG)
+
+Public key, `ieng6.ucsd.edu`
+
+![Public Key](labreport2screenshots/publickeyieng6.PNG)
+
+Terminal ieng6 login, no password
+
+![Login no pass](labreport2screenshots/loginnopass.PNG)
 
 ## Part 3 - What I've Learned
+
+I learned about the similarities between file paths and URLs. I find it interesting that the domain of a URL acts in a similar manner to the root of an absolute path. Learning about the "anatomy" of URLs, including queries and the hash fragment, was also interesting and is something that I began to notice more often as I browse the web.
