@@ -47,6 +47,7 @@ class ChatServer {
 ```
 
 ![Chat Message 1](chatmessage1.PNG)
-
+When adding this message, the methods called are `getPath()`, `getQuery()`, `split()`, and `equals()`.
+`getPath()` and `getQuery()` do not take arguments. `split()` takes in the `=` and `&` characters as arguments to split the string returned by `url.getQuery()` and the string stored in `parameters[1]` respectively into substrings. `equals()` takes in `"/"` and `"/add-message"` as arguments to compare with the path of `url`. The relevant fields are `url`, `parameters[]`, `chatMessage[]`, `chatUser`, `fullMessage`, and `messageHistory`. The values of these fields are 
 
 ![Chat Message 2](chatmessage2.PNG)
