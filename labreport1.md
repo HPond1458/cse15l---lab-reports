@@ -14,11 +14,9 @@ $ pwd
 
 The absolute path to the working directory was `/c/Users/henry`.
 
-The absolute path does not change after running `cd`. Since no argument was offered,
-the working directory either does not change or seems to return to the "default" directory, 
-that being `/c/Users/henry` in this case.
+The absolute path does not change after running `cd`. This is because running `cd` with no arguments changes the working directory to the home directory, which is also `/c/Users/henry`. 
 
-This output is not an error, as it simply resets the directory back to its default.
+This output is not an error, the working directory is now the home directory.
 
 ### Directory argument
 
@@ -68,8 +66,7 @@ Hello.class  Hello.java  messages/  README
 
 The absolute path to the working directory was `/c/Users/henry/lecture1`.
 
-When no argument was offered, the command simply listed the contents of the `lecture1` directory, that 
-being the three files and the folder seen in the output above.
+When no argument was offered, the command simply listed the contents of the `lecture1` directory, that being the three files and the folder seen in the output above. This is because when `ls` is ran without arguments, it lists the contents of the current working directory, which in this case is `/c/Users/henry/lecture1`.
 
 This output is not an error, as the command executed as expected.
 
