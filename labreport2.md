@@ -46,7 +46,7 @@ class ChatServer {
 }
 ```
 
-![Chat Message 1](chatmessage1.png)
+![Chat Message 1](chatmessage1.PNG)
 
 
-![Chat Message 2](chatmessage2.png)
+![Chat Message 2](chatmessage2.PNG)
