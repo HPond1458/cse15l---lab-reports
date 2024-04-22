@@ -12,9 +12,9 @@ $ pwd
 /c/Users/henry
 ```
 
-The absolute path to the working directory was `/c/Users/henry`.
+The absolute path to the working directory was `/c/Users/henry/lecture1`.
 
-The absolute path does not change after running `cd`. This is because running `cd` with no arguments changes the working directory to the home directory, which is also `/c/Users/henry`. 
+The working directory is now `/c/Users/henry`. This is because when `cd` is executed with no arguments, the current working directory is changed back to the home directory. 
 
 This output is not an error, the working directory is now the home directory.
 
