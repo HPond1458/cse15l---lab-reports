@@ -1,7 +1,7 @@
 # Lab Report 3 - Henry Pond
 
 ## Part 1 - Bugs
-I chose to analyze the bug in the `filter` method in the ListExamples class. 
+I chose to analyze the bug in the `filter` method in `ListExamples.java`. 
 
 ### Failure-inducing Test
 ```
@@ -91,7 +91,7 @@ Simply changing `result.add(0, s);` to `result.add(s);` fixes the issue and `fil
 ## Part 2 - Researching the `less` Command
 `less` is a command used to observe the contents of a file in a more focused and controlled manner than `cat`. It displays the contents of the file line by line, but only a certain number of lines at a time depending on the size of the terminal. The contents of the file can then be "scrolled" through by using the arrow keys to move up and down or side to side. For example, when "scrolling" downwards, the top line is removed from view and the next line in the file is displayed at the bottom of the terminal.
 
-Note: Since the `less` command replaces the terminal completely upon execution, I will paste the exact command I used and the first "page" of output separately. In addition, I will be resizing the terminal so that only six lines of `less` are displayed to save space on this document.
+Note: Since the `less` command replaces the terminal completely upon execution, I will paste the exact command I used and the first "page" of output separately. In addition, I will be resizing the terminal so that only eight lines of `less` are displayed to save space on this document.
 
 ### `-N` option
 This option will cause `less` to display the line number of each line on the left side of the terminal alongside the contents of each line. This is useful for referencing certain lines of certain files without having to manually count the lines.
@@ -125,7 +125,7 @@ technical/government/Media/Advocate_for_Poor.txt
 ```
 
 ### `-F` option
-This option causes `less` to exit automatically if the contents of the file can be displayed on one screen. However, the contents of the file are still displayed in a manner similar to `cat`. This is useful for avoiding the use of `less` when unnecessary and `cat` would be sufficient. 
+This option causes `less` to exit automatically if the contents of the file can be displayed on one screen. However, the contents of the file are still displayed in a manner similar to `cat`. This is useful for situations where the functionality of `less` is unnecessary and `cat` would be sufficient. 
 
 In addition, finding a sufficiently short text file within `./technical` required me to utilize the `find`, `wc`, and `sort` commands we learned about in lab this past week!
 
@@ -248,4 +248,4 @@ technical/government/Media/Advocate_for_Poor.txt
 Note: It doesn't seem possible to replicate the highlighting of the pattern argument in these codeblocks.
 
 ### Source
-I learned about all of the above options from [man7.org](https://man7.org/linux/man-pages/man1/less.1.html).
+I learned about all of the above command line options for the `less` command from [man7.org](https://man7.org/linux/man-pages/man1/less.1.html).
