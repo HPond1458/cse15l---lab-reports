@@ -4,11 +4,15 @@
 
 ### Step 4 - Logging in to ieng6
 
+![Step 4](labreport4screenshots/step4.png)
+
 Keys pressed: `<up><enter>`
 
 The `ssh` login command was the only command I used on my local terminal today, so it was easy to access with the up arrow key.
 
 ### Step 5 - Cloning the lab7 fork
+
+![Step 5](labreport4screenshots/step5.png)
 
 Keys pressed: `git<space>clone<space><ctrl+v><enter>`
 
@@ -16,11 +20,15 @@ I copy+pasted the ssh URL from Github into the terminal to speed up this step.
 
 ### Step 6 - Running the tests without fixing the bug
 
+![Step 6](labreport4screenshots/step6.png)
+
 Keys pressed: `cd<space>la<tab><enter>bash<space>t<tab><enter>`
 
 I used `<tab>` to auto-complete both commands to save time.
 
 ### Step 7 - Fixing the bug with `vim`
+
+![Step 7](labreport4screenshots/step7.png)
 
 Keys pressed: `vim<space>L<tab>.java<enter>20j<enter>5j<enter>4j<enter>5h<enter>r2:wq<enter>`
 
@@ -30,11 +38,15 @@ I then used the `r` command to replace 1 with 2, then saved my changes and exite
 
 ### Step 8 - Running the tests after fixing the bug
 
+![Step 8](labreport4screenshots/step8.png)
+
 Keys pressed: `bash<space>t<tab><enter>`
 
 I repeated exactly what I did in step 6, and this time the tests succeed.
 
 ### Step 9 - Committing and pushing the results to Github
+
+![Step 9](labreport4screenshots/step9.png)
 
 Keys pressed: `git<space>add<space>.<enter>git<space>commit<space>-m<space>"Fixed<space>bug<space>in<space>ListExamples.java"<enter>git<space>push<enter>`
 
