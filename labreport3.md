@@ -94,7 +94,7 @@ Simply changing `result.add(0, s);` to `result.add(s);` fixes the issue and `fil
 Note: Since the `less` command replaces the terminal completely upon execution, I will paste the exact command I used and the first "page" of output separately. In addition, I will be resizing the terminal so that only eight lines of `less` are displayed to save space on this document.
 
 ### `-N` option
-This option will cause `less` to display the line number of each line on the left side of the terminal alongside the contents of each line. This is useful for referencing certain lines of certain files without having to manually count the lines.
+This option will cause `less` to display the line number of each line on the left side of the terminal alongside the contents of each line. This is useful for referencing certain lines of certain files without having to manually count the lines. 
 
 Example 1:
 `less -N technical/911reports/preface.txt`
@@ -109,6 +109,7 @@ Example 1:
       8                 Democrats chosen by elected leaders from our nation's capital at a time of great     
 technical/911report/preface.txt
 ```
+In this example, knowing that line 7 is where the document begins to relay information could be useful for future reference.
 
 Example 2:
 `less -N technical/government/Media/Advocate_for_Poor.txt`
@@ -123,6 +124,7 @@ Example 2:
       8 Advocate for Poor Has Own Obstacles
 technical/government/Media/Advocate_for_Poor.txt
 ```
+In this example, I could use the `tail` command to omit the first 7 lines to immediately begin displaying the contents of the article.
 
 ### `-F` option
 This option causes `less` to exit automatically if the contents of the file can be displayed on one screen. However, the contents of the file are still displayed in a manner similar to `cat`. This is useful for situations where the functionality of `less` is unnecessary and `cat` would be sufficient. 
@@ -154,7 +156,7 @@ landlord-tenant disputes and even criminal cases are the specialty
 of his East New York Legal Services Corp. on New Lots Ave.
 technical/government/Media/Advocate_for_Poor.txt
 ```
-Note that in this example, `less` took up the terminal, had to be exited with `q`, and left no trace of output as normal.
+Note that in this example, `less` took up the terminal, had to be exited with `q`, and left no trace of output as normal. The `less` command is useful to browse the contents of the file in this case, but if the file were much smaller, I might want to avoid the hassle of using the `less` interface and have it behave like `cat` instead. The `-F` option does this automatically.
 
 Example 2:
 ```
@@ -178,7 +180,7 @@ $ less -F technical/plos/pmed.0020226.txt
 
 
 ```
-Note that in this example, the contents of the file were displayed within the terminal alongside the command in a similar manner to `cat`. This output does not have the same functionality that `less` normally would.
+Note that in this example, the contents of the file were displayed within the terminal alongside the command in a similar manner to `cat`. This output does not have the same functionality that `less` normally would. This potentially saves time and effort, as I no longer have to open and exit the `less` interface.
 
 ### `-e` option
 This option causes `less` to exit automatically upon reaching the end of the contents of the file *twice*, whereas normally you could only exit `less` by pressing `q`. This is potentially useful for quickly browsing the contents of a file, then exiting fluidly upon finishing. You would see the end of the file, then scroll down again to exit.
@@ -198,7 +200,7 @@ Example 1:
 
 (END)
 ```
-Pressing down arrow one more time exited the `less` terminal without pressing `q`.
+Pressing down arrow one more time exited the `less` terminal without pressing `q`. This saves some effort and time.
 
 Example 2:
 `less -e technical/plos/pmed.0020226.txt`
@@ -213,10 +215,10 @@ Example 2:
 
 (END)
 ```
-Similarly, pressing down arrow once more caused the `less` terminal to exit without pressing `q`.
+Similarly, pressing down arrow once more caused the `less` terminal to exit without pressing `q`. The `-e` option improves workflow by seamlessly exiting the file contents without having to press `q`.
 
 ### `-p<pattern>` option
-This option causes the contents of the file to be displayed beginning with the first occurrence of the pattern argument. It also highlights all occurrences of the pattern within the file contents. This is potentially useful for skipping unnecessary line breaks or unwanted information at the beginning of the file.
+This option causes the contents of the file to be displayed beginning with the first occurrence of the pattern argument. It also highlights all occurrences of the pattern within the file contents. 
 
 Example 1:
 `less -pOur technical/911report/preface.txt`
@@ -231,6 +233,7 @@ Example 1:
                 individuals in ten countries. This included nearly every senior official from the
 technical/911report/preface.txt
 ```
+In this example, the `less` interface opens at the first occurrence of the word "Our". This is useful because it skips the line breaks and other extraneous information at the beginning of the file.
 
 Example 2:
 `less -pFormer technical/government/Media/Advocate_for_Poor.txt`
@@ -245,7 +248,7 @@ helping the working poor navigate the legal system. Immigration,
 landlord-tenant disputes and even criminal cases are the specialty
 technical/government/Media/Advocate_for_Poor.txt
 ```
-Note: It doesn't seem possible to replicate the highlighting of the pattern argument in these codeblocks.
+The `-p` option is also useful for searching for patterns in the file, as all instances of the pattern become highlighted. The user can then easily see all instances of the pattern as they scroll through the file.
 
 ### Source
 I learned about all of the above command line options for the `less` command from [man7.org](https://man7.org/linux/man-pages/man1/less.1.html).
